@@ -1,0 +1,162 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+        h1 {
+            color: black;
+            font-family: 'Satisfy', cursive, sans-serif;
+            text-align: center;
+            text-shadow: 1px 1px 2px rgba(255, 0, 0, 0.521);
+            font-style: italic;
+            text-decoration: underline;
+            font-size: 2.3em; 
+            /*shorthand font
+            Font-style -> font-weight -> fonte-size -> font-family ->*/
+            background-color: lightseagreen;
+            height: 42px;
+            width: 372px;
+            border: 12px groove red;
+            padding: 12px 100px 12px 100px;
+            margin: auto;            
+                
+        }
+
+        body {
+                background-image: linear-gradient(rgb(84, 84, 173), rgb(196, 94, 94));
+                background-attachment: fixed;
+        }
+
+        main {
+                background-color: rgba(144, 172, 148, 0.534);
+                border-radius: 10px;
+                box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.692); 
+                width: 1000px;
+                padding: 10px;
+                margin: auto;
+        }
+
+        /*  SELETORES PERSONALIZADOS
+            # = id
+            . = class
+            : = pseudo-class
+            :: = pseudo-element
+            > = clildren
+
+        */
+
+        a {
+                color: red;
+                text-decoration: none;
+                font-weight: bold;
+            }
+    
+            a:visited {
+                color: blue
+            }
+            
+            a:hover {
+                color: black;
+                text-decoration: underline;
+            }
+    
+            a:active {
+                color: white;
+            }
+
+            a::after {
+                content: ' [link]';
+            }
+
+        p {
+                font-family: Arial, Helvetica, sans-serif;
+                text-align: justify;
+                text-indent: 20px;
+                /*
+                Medidas absplutas
+                cemtimetro, milimetro, polegada, pix, ponto, paica
+                Medidas relativas
+                em, ex, rem, vw, vh,%
+                16px geralmente = 1em
+                weigth = peso width = largura heigth = altura
+                */
+                font-weight: lighter;
+                /*Lighter, normal, bold, bolder, 100-900 */
+
+        }
+
+        pre {
+                font-family: Arial, Helvetica, sans-serif;
+                text-align: justify;
+                font-weight: lighter;
+        }
+
+        h2 {
+                color: rgb(0, 0, 0);
+                text-shadow: 1px 1px 2px rgba(95, 207, 95, 0.705);
+                font-family: 'Times New Roman', Times, serif;
+        }
+
+        h3 {
+                color: black;
+                text-shadow: 1px 1px 2px  rgb(187, 181, 96);
+                font-family: Arial, Helvetica, sans-serif;
+        }
+
+        li {
+                color: black;
+                font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div#cor1:hover > li {
+                display: block;
+            color: rgb(0, 0, 0);
+            background-color: rgb(255, 255, 0)
+        }
+
+        div#cor2:hover > li {
+                display: block;
+            color: rgb(0, 0, 0);
+            background-color: rgb(0, 128, 0)
+        }
+
+        div#cor3:hover > li {
+                display: block;
+            color: rgb(0, 0, 0);
+            background-color: rgb(0, 0, 255)
+        }
+
+        div#cor4:hover > li {
+                display: block;
+            color: rgb(0, 0, 0);
+            background-color: rgb(238, 130, 238)
+        }
+
+        div#cor5:hover > li {
+                display: block;
+            color: rgb(0, 0, 0);
+            background-color: rgb(245, 135, 154)
+        }
+
+        div#cor6:hover > li{
+                display: block;
+            color: rgb(0, 0, 0);
+            background-color: rgb(255, 0, 0)
+        }
+
+        div#cor7:hover > li {
+                display: block;
+            color: rgb(0, 0, 0);
+            background-color: rgb(255, 165, 0)
+        }
+
+        div#cor8:hover > li {
+                display: block;
+            color: rgb(0, 0, 0);
+            background-color: rgb(255, 255, 255)
+        }
+
+        div#cor9:hover > li {
+                display: block;
+            color: rgb(255, 255, 255);
+            background-color: black
+        }

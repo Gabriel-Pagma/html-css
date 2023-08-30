@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Anotações</title>
+</head>
+<body>
+    <main>
+        <h1>Minhas Anotações pagina 1</h1>
+        <p><img src="img/minhafoto.png" alt="Minha foto"></p>
+        <hr>
+        <h2>Lista das anotações</h2>
+        <ul>
+            <h4>
+                <li>Como funciona HTML e CSS</li>
+                <li>Dominio e Hospedagem</li>
+                <li>Imagens sem direitos</li>
+                <li>Tags HTML</li>
+                <li>Audio e videos</li>
+                <li>Atalhos VsCode</li>
+                <li>Link para meus excercícios</li>
+            </h4>
+        </ul>
+        <hr>
+        <h2>Como funciona a <abbr title="HyperText Markup language">HTML</abbr> e as <abbr title="Cascading Style Sheets">CSS</abbr>? JS?</h2>
+        <p>HTML e CSS, são linguangens porém não são linguanges de programação, então quando você está fazendo um site em HTML e CSS, você não está programando e sim desenvolvendo, então não se diz eu <q>Eu programo em HTML e CSS</q>, você diz <q>Eu desenvolvo em HTML e CSS.</q></p>
+        <pre>
+            HTML = HyperText Markup Language = Linguagem de marcação hipertexto
+            CSS = Cascading Style Sheets = Folha de estilo em cascata
+        </pre>
+        <p>A linguagem HTML é uma linguagem focada em conteudo, seja texto, imagem, video..., já a linguagem CSS é focada desing, seja cores, sombras, tamanho, posicionamento..., e tem JS, que é uma linguagem de programação focada nas interações, seja menus, animações, popus, validaçôes...</p>
+        <p>Tags em HTML são &lt; &gt;, por exemplo &lt;h1&gt; titulo &lt;/h1&gt;, não pode ter espaço entre o &lt; &gt; ea tag dentro, nesse exemplo o &lt;h1&gt; é a abertura da tag eo &lt;/h1&gt; é o fechamento da tag, algumas não possuem fechamento, porem não são muitas, exemplo, &lt;img src="foto,png" alt="exemplo de foto"&gt;, alt = paramentro, exemplo de foto = valor, scr = origem.</p>
+        <p>Para deixar <q>bonito</q> o titulo vamos usar CSS;</p>
+        <pre>
+            h1{
+                font-family:Arial;
+                font-size:20pt;
+                color:blue;
+            }
+        </pre>
+        <p>h1 = seletor, font-family = declaração, toda declaração no CSS tem ; no final, color = porpriedade, blue = valor, resumindo, CSS tem seletores, dentro dos seletores tem declarações, cada declaração é um par de propriedade e valor.</p>
+        <h3>Estrutura basica de documento HTML</h3>
+        <pre>
+            &lt;!DOCTYPE html&gt; = Primeira linha que diz a seu computador que você desenvolvera em HTML.
+            &lt;html lang="pt-br"&gt; = Dizendo que seu conteudo é primordialmente em portugues.
+            &lt;head&gt; = Onde fica as configurações do site.
+                &lt;meta charset="UTF-8"&gt; = Para o site ser compativel com UTF-8, compativel com acentoações.
+                &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt; = Ainda não sei oque faz.
+                &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt; = Para o site abrir padrão, em uma escala de 100%.
+                &lt;title&gt;Document &lt;/title&gt; = titulo do site.
+            &lt;/head&gt;
+            &lt;body&gt; = Onde fica o site, o conteudo do site.
+        
+            &lt;/body&gt;
+            &lt;/html&gt;
+        </pre>
+        <hr>
+        <h2>Oque é dominio e hospedagem?</h2>
+        <pre>
+            Dominio é o nome que identifica seu site.
+            Hospedagem é o local onde seu site vai estar amarzenado.
+        </pre>
+        <p>Não pode existir dois dominio com o mesmo nome, se você deseja ter um dominio é preciso pagar anualmente, com isso você tera direito a usar o nome por um ano, você tambem pode pagar 5 ou 10 anos se desejar.</p>
+        <p>Hospedagem é um espaço no qual você amarzena seus arquivos, assim como dominios, é um serviço pago, claro possuem opções gratuitas, porem é mais limitado, você paga mensalmente para ter uma hospedagem, tambem pode ser pago anualmente, durante a escolha é preciso ter muito cuidado, veja bem o espaço, memoria, os recursos etc...</p>
+        <p><a href="https://www.tiktok.com/@animes_iwatani?lang=pt-BR" target="_blank" rel="external">https://www.tiktok.com/@animes_iwatani?lang=pt-BR</a></p>
+        <pre>
+            URL = Tudo
+            Dominio = Tiktok
+            TLD = .com
+            Sub-Dominio = www
+            Após a / = Caminho
+            HTTPS = Protocolo
+        </pre>
+        <hr>
+        <h2>Imagens sem direitos</h2>
+        <p>Google -> pesquisa oque deseja -> imagens -> ferramentas -> direitos de uso -> marcadas para reutilazação com modificação.</p>
+        <p>Sites = https://unsplash.com/pt-br, https://pexels.com/pt-br ...</p>
+        <hr>
+        <h2>Tags HTML</h2>
+        <pre>
+                &lt;h1&gt;<strong>Titulo</strong>&lt;/h1&gt;
+                &lt;h2&gt;<strong>Sub-Titulo</strong>&lt;/h2&gt;
+                &lt;p&gt;<strong>Paragrafo</strong>&lt;/p&gt;
+                &lt;hr&gt; = <strong>Fazer uma linha</strong>
+                &lt;br&gt; = <strong>Quebra de linha</strong>
+                &lt;pre&gt;<strong>Texto pré-formatado</strong>&lt;/pre&gt;
+                &lt;mark&gt;<strong>Marca texto</strong>&lt;/mark&gt;
+                &lt;body&gt;<strong>Corpo do pagina</strong>&lt;/body&gt;
+                &lt;head&gt;<strong>Cabeça da pagina</strong>&lt;/head&gt;
+                &lt;abbr&gt;<strong>Indicar uma abreviatura ou sigla</strong>&lt;/abbr&gt;
+                &lt;blockquote&gt;<strong>Indicar citações</strong>&lt;/blockquote&gt;
+                &lt;sup&gt;<strong>Letras menores acima (elevado)</strong>&lt;/sup&gt;
+                &lt;sub&gt;<strong>Letras menores abaixo</strong>&lt;/sub&gt;
+                &lt;em&gt;<strong>Para enfatizar</strong>&lt;/em&gt;
+                &lt;small&gt;<strong>Letra pequena</strong>&lt;/small&gt;
+                &lt;strong&gt;<strong>Utilizado para conteudos importantes</strong>&lt;/strong&gt;
+                &lt;ol&gt;<strong>Listas ordenadas,(type para definir como sera a contagem)</strong>&lt;/ol&gt;
+                &lt;l1&gt;<strong>Itens de lista</strong>&lt;/li&gt;
+                &lt;ul&gt;<strong>Listas não ordenadas</strong>&lt;/ul&gt;
+                &lt;dl&gt;<strong>Lista de definição</strong>&lt;/dl&gt;
+                &lt;dt&gt;<strong>Termo</strong>&lt;/dt&gt;
+                &lt;dd&gt;<strong>Descrição</strong>&lt;/dd&gt;
+                &lt;a&gt;<strong>Links</strong>&lt;/a&gt; <!--target="_black", rel="external" Para abrir uma nova guia-->
+                &lt;source&gt;<strong>arquivos dinamicos</strong>&lt;/source&gt; <!--source-midia-taype-->
+                &lt;audio&gt;<strong>Colocar audio</strong>&lt;/audio&gt; <!--controls autoplay-->
+                &lt;video&gt;<strong>Colocar video</strong>&lt;/video&gt; <!--(width = tamanho), source-midia-taype, (poster = capa do video)-->
+                &lt;details&gt;<strong>Esconder e mostrar conteudo</strong>&lt;/details&gt; <!--summary-->
+                &lt;span&gt;<strong>trecho do texto</strong>&lt;/span&gt;
+            </pre>
+        <hr>
+        <h2>Audio e videos</h2>
+        <pre>
+            <iframe width="300" height="315" src="https://www.youtube.com/embed/h_LyE5S9jgQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <video src="midia/morango-video.mp4" width="300" controls autoplay loop></video>
+            <audio src="midia/AUD-20230520-WA0031.mp3" controls autoplay loop></audio>
+        </pre>
+        <hr>
+        <h2>Atalhos Vscode</h2>
+        <pre>
+            tag + * + Nº = ira criar a quantidade de tag que você definir.
+            Segurar <strong>Alt</strong> para mudar varias tags que queira por igual
+        </pre>
+        <hr>
+        <h2>Meus excercícios</h2>
+        <pre>
+            <a href="file:///C:/Users/gabri/OneDrive/Documentos/Estudos/html-css/exercicios/ex0/index.html" target="_blank" rel="external">link para meus excercícios</a>
+        </pre>
+        <hr>
+        <pre>
+            <p style="text-align: right;"><a href="pag02.html" target="_blank" rel="external"> Anotaçãoes pagina 2</a></p>
+        </pre>
+    </main>
+</body>
+</html

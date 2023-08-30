@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ff9999, #66ccff);
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+  }
+  .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  .menu ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  .menu li {
+    margin-right: 20px;
+  }
+  .menu:hover a {
+    color: rgb(241, 241, 179);
+  }
+
+  .menu a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 70px auto;
+    padding: 20px;
+    background-color: rgba(135, 66, 66, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(128, 0, 128, 0.3);
+    }
+
+    .container > h1 {
+        color: rgb(95, 195, 145);
+    }
+
+  .comic {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .comic-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2a5d78;
+    margin-bottom: 10px;
+  }
+  .synopsis {
+    font-size: 1.1rem;
+    color: #666;
+  }
