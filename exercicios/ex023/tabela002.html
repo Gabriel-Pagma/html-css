@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+           
+            background-color: rgb(0, 30, 255);
+            color: rgb(255, 255, 255);
+            text-align: center;
+            border-radius: 10px;
+            
+            box-shadow: 3px 3px 10px black;
+        }
+
+        table {
+            width: 100%; /*460px*/
+            height: 200px;
+            border-collapse: collapse;
+        }
+
+         thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        .num {
+            text-align: right;
+        }
+
+        img {
+            padding-right: 5px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+        THEAD
+            TR,TD,TH
+        TBOOY
+            TR,TD,TH
+        TFOOT
+            TR,TD,TH
+    -->
+    <table>
+        <thead>
+            <tr>
+                <th>Posição</th>
+                <th>Estados</th>
+                <th>População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1º</td>
+                <td> <a href="https://pt.wikipedia.org/wiki/S%C3%A3o_Paulo_(estado)" target="_blank"><img src="img/Bandeira_do_estado_de_São_Paulo.svg.webp" alt="">São Paulo</a></td>
+                <td class="num">44.420.459</td>
+            </tr>
+            <tr>
+                <td>2º</td>
+                <td> <a href="https://pt.wikipedia.org/wiki/Minas_Gerais" target="_blank"><img src="img/Bandeira_de_Minas_Gerais.svg.webp" alt="">Minas Gerais</a></td>
+                <td class="num">20.538.718</td>
+            </tr>
+            <tr>
+                <td>3º</td>
+                <td> <a href="https://pt.wikipedia.org/wiki/Rio_de_Janeiro_(estado)" target="_blank"><img src="img/Bandeira_do_estado_do_Rio_de_Janeiro.svg.webp" alt="">Rio de Janeiro</a></td>
+                <td class="num">16.054.524</td>
+            </tr>
+            <tr>
+                <td>4º</td>
+                <td> <a href="https://pt.wikipedia.org/wiki/Bahia" target="_blank"><img src="img/Bandeira_da_Bahia.svg.png" alt="">Bahia</a></td>
+                <td class="num">14.136.417</td>
+            </tr>
+            <tr>
+                <td>5º</td>
+                <td> <a href="https://pt.wikipedia.org/wiki/Paran%C3%A1" target="_blank"><img src="img/Bandeira_do_Paraná.svg.webp" alt="">Paraná</a></td>
+                <td class="num">11.443.208</td>
+            </tr>
+            <tr>
+                <td>6º</td>
+                <td> <a href="https://pt.wikipedia.org/wiki/Rio_Grande_do_Sul" target="_blank"><img src="img/Bandeira_do_Rio_Grande_do_Sul.svg.webp" alt="">Rio Grande do Sul</a></td>
+                <td class="num">10.880.506</td>
+            </tr>
+            <tr>
+                <td>7º</td>
+                <td> <a href="https://pt.wikipedia.org/wiki/Pernambuco" target="_blank"><img src="img/Bandeira_de_Pernambuco.svg.png" alt="">Pernambuco</a></td>
+                <td class="num">9.058.155</td>
+            </tr>
+            <tr>
+                <td>8º</td>
+                <td> <a href="https://pt.wikipedia.org/wiki/Cear%C3%A1" target="_blank"><img src="img/Bandeira_do_Ceará.svg.webp" alt="">Ceará</a></td>
+                <td class="num">8.791.688</td>
+            </tr>
+            <tr>
+                <td>9º</td>
+                <td> <a href="https://pt.wikipedia.org/wiki/Par%C3%A1" target="_blank"><img src="img/Bandeira_do_Pará.svg.webp" alt="">Pará</a></td>
+                <td class="num">8.116.132</td>
+            </tr>
+            <tr>
+                <td>10º</td>
+                <td> <a href="https://pt.wikipedia.org/wiki/Santa_Catarina" target="_blank"><img src="img/Bandeira_de_Santa_Catarina.svg.webp" alt="">Santa Catarina</a></td>
+                <td class="num">7.609.601</td>
+            </tr>
+            <tr>
+                <td>11º</td>
+                <td> <a href="https://pt.wikipedia.org/wiki/Goi%C3%A1s" target="_blank"><img src="img/Flag_of_Goiás.svg.webp" alt="">Goiás</a></td>
+                <td class="num">7.055.228</td>
+            </tr>
+            <tr>
+                <td>12º</td>
+                <td> <a href="https://pt.wikipedia.org/wiki/Maranh%C3%A3o" target="_blank"><img src="img/Bandeira_do_Maranhão.svg.png" alt="">Maranhão</a></td>
+                <td class="num">6.775.152</td>
+            </tr>
+            <tr>
+                <td>13º</td>
+                <td> <a href="https://pt.wikipedia.org/wiki/Para%C3%ADba" target="_blank"><img src="img/30px-Bandeira_da_Paraíba.svg.png" alt="">Paraíba</a></td>
+                <td class="num">3.974.495</td>
+            </tr>
+            <tr>
+                <td>14º</td>
+                <td> <a href="https://pt.wikipedia.org/wiki/Amazonas" target="_blank"><img src="img/Bandeira_do_Amazonas.svg.png" alt="">Amazonas</a></td>
+                <td class="num">3.941.175</td>
+            </tr>
+            <tr>
+                <td>15º</td>
+                <td> <a href="https://pt.wikipedia.org/wiki/Esp%C3%ADrito_Santo_(estado)" target="_blank"><img src="img/Bandeira_do_Espírito_Santo.svg.webp" alt="">Espírito Santo</a></td>
+                <td class="num">3.833.486</td>
+            </tr>
+            <tr>
+                <td>16º</td>
+                <td> <a href="https://pt.wikipedia.org/wiki/Mato_Grosso" target="_blank"><img src="img/Bandeira_de_Mato_Grosso.svg.webp" alt="">Mato Grosso</a></td>
+                <td class="num">3.658.813</td>
+            </tr>
+            <tr>
+                <td>17º</td>
+                <td> <a href="https://pt.wikipedia.org/wiki/Rio_Grande_do_Norte" target="_blank"><img src="img/Bandeira_do_Rio_Grande_do_Norte.svg.webp" alt="">Rio Grande do Norte</a></td>
+                <td class="num">3.302.406</td>
+            </tr>
+            <tr>
+                <td>18º</td>
+                <td> <a href="https://pt.wikipedia.org/wiki/Piau%C3%AD" target="_blank"><img src="img/Bandeira_do_Piauí.svg.png" alt="">Piauí</a></td>
+                <td class="num">3.269.200</td>
+            </tr>
+            <tr>
+                <td>19º</td>
+                <td> <a href="https://pt.wikipedia.org/wiki/Alagoas" target="_blank"><img src="img/30px-Bandeira_de_Alagoas.svg.png" alt="">Alagoas</a></td>
+                <td class="num">3.127.511</td>
+            </tr>
+            <tr>
+                <td>20º</td>
+                <td> <a href="https://pt.wikipedia.org/wiki/Distrito_Federal_(Brasil)" target="_blank"><img src="img/Bandeira_do_Distrito_Federal_(Brasil).svg.webp" alt="">Distrito Federal</a></td>
+                <td class="num">2.817.068</td>
+            </tr>
+            <tr>
+                <td>21º</td>
+                <td> <a href="https://pt.wikipedia.org/wiki/Mato_Grosso_do_Sul" target="_blank"><img src="img/Bandeira_de_Mato_Grosso_do_Sul.svg.png" alt="">Mato Grosso do Sul</a></td>
+                <td class="num">2.756.700</td>
+            </tr>
+            <tr>
+                <td>22º</td>
+                <td> <a href="https://pt.wikipedia.org/wiki/Sergipe" target="_blank"><img src="img/Bandeira_de_Sergipe.svg.webp" alt="">Sergipe</a></td>
+                <td class="num">2.209.558</td>
+            </tr>
+            <tr>
+                <td>23º</td>
+                <td> <a href="https://pt.wikipedia.org/wiki/Rond%C3%B4nia" target="_blank"><img src="img/Bandeira_de_Rondônia.svg.webp" alt="">Rondônia</a></td>
+                <td class="num">1.581.016</td>
+            </tr>
+            <tr>
+                <td>24º</td>
+                <td> <a href="https://pt.wikipedia.org/wiki/Tocantins" target="_blank"><img src="img/Bandeira_do_Tocantins.svg.png" alt="">Tocantins</a></td>
+                <td class="num">1.511.459</td>
+            </tr>
+            <tr>
+                <td>25º</td>
+                <td> <a href="https://pt.wikipedia.org/wiki/Acre" target="_blank"><img src="img/Bandeira_do_Acre.svg.png" alt="">Acre</a></td>
+                <td class="num">830.026</td>
+            </tr>
+            <tr>
+                <td>26º</td>
+                <td> <a href="https://pt.wikipedia.org/wiki/Amap%C3%A1" target="_blank"><img src="img/Bandeira_do_Amapá.svg.png" alt="">Amapá</a></td>
+                <td class="num">733.508</td>
+            </tr>
+            <tr>
+                <td>27º</td>
+                <td> <a href="https://pt.wikipedia.org/wiki/Roraima" target="_blank"><img src="img/Bandeira_de_Roraima.svg.png" alt="">Roraima</a></td>
+                <td class="num">636.303</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td></td>
+                <td>Total de Habitantes</td>
+                <td class="num">203.062.512</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
