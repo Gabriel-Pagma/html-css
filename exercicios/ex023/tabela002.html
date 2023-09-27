@@ -16,6 +16,7 @@
             width: 100%; /*460px*/
             height: 200px;
             border-collapse: collapse;
+            position: relative;
         }
         
         caption {
@@ -24,6 +25,11 @@
             font-weight: bold;
             padding: 10px;
             background-color: rgb(189, 185, 185);
+        }
+
+        thead {
+            position: sticky;
+            top: -1px;
         }
 
         tbody {
@@ -228,8 +234,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <td></td>
-                <th scope="row">Total de Habitantes</th>
+                <th scope="row" colspan="2">Total de Habitantes</th>
                 <td class="num">203.062.512</td>
             </tr>
         </tfoot>
