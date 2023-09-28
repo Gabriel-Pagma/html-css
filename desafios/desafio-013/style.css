@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(0, 0, 0);
+}
+
+table {
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+}
+
+td {
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    width: 300px;
+    border: 1px solid rgb(255, 0, 251);
+    box-shadow: 1px 1px 12px rgb(255, 0, 251);
+}
+
+.vazio {
+    background-color: rgb(0, 0, 0);
+}

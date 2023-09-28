@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+    text-align: center;
+    width: 600px;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid black;
+}
+
+thead {
+    color: white;
+    font-weight: 700;
+    background-color: rgb(110, 110, 110);
+}
+
+.esquerda {
+    text-align: start;
+    color: white;
+    font-weight: 700;
+    background-color: rgb(110, 110, 110);
+}
+
+.media {
+    color: white;
+    background-color: rgb(110, 110, 110);
+}
