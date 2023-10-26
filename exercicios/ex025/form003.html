@@ -2,34 +2,103 @@
 <html lang="pt-br">
 <head>
     <title>formulario</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(255, 255, 255);
+        }
+        .cadastro {
+            position: absolute;
+            background: black url(img/img-fundo.jpg) no-repeat center center fixed;
+            background-size: cover;
+            color: rgb(0, 0, 0);
+            width: 100%;
+            height: 400px;
+            box-shadow: 5px 5px 10px black;
+        }
+
+        form {
+            position: relative;
+            background-color: rgb(21, 111, 141);
+            box-shadow: 2px 2px 5px rgba(255, 0, 0, 0.378);
+            top: 50%;
+            left: 50%;
+            padding: 25px;
+            width: 300px;
+            height: 150px;
+            transform: translate(-50%, -50%);
+            border: solid 1px rgb(0, 0, 0);
+        }
+
+        .cad{
+            padding: 2px;
+            font-weight: bolder;
+        }
+
+        .sub {
+            background-color: rgb(238, 255, 0);
+            position: relative;
+            border: solid 2px black;  
+            padding: 3px;
+            top: 10px;
+            left: 100px;
+        } 
+
+        .lim {
+            background-color: rgb(238, 255, 0);
+            position: relative;
+            border: solid 2px black;  
+            padding: 3px;
+            top: 10px;
+            left: 100px;
+        }
+
+        .sub:hover {
+            background-color: black;
+            color: white;
+            transform: translate(-2px,-2px);
+        }
+
+        .lim:hover {
+            background-color: black;
+            color: white;
+            transform: translate(-2px,-2px);
+        }
+    </style>
 </head>
 <body>
-    <h1>Teste formulario</h1>
-    <form action="cadastro.php" method="post">
-        <p>
-            <label for="iname">Nome: </label>
-            <input type="text" name="nome" id="iname" required maxlength="30" placeholder="name completo" autocomplete="name">
-        </p>
-        <p>
-            <label for="imedia">Média</label>
-            <input type="number" name="media" id="imedia" required min="0" max="10" placeholder="0 a 10" step="0.1">
-        </p>
-        <p>
-            <label for="imes">Periodo Letivo</label>
-            <input type="month" name="mes" id="imes" value="2020-08">
-        </p>
-        <p>
-            <label for="idia">Dia da prova</label>
-            <input type="date" name="dia" id="idia">
-        </p>
-        <p>
-            <label for="ihora">Hora da prova</label>
-            <input type="time" name="hora" id="ihora">
-        </p>
-        <p>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpar">
-        </p>
-    </form>
+    <section class="cadastro">
+        <form action="cadastro.php" method="post">
+            <p class="cad">
+                <label for="iname">Nome: </label>
+                <input type="text" name="nome" id="iname" required maxlength="30" placeholder="name completo" autocomplete="name">
+            </p>
+            <p class="cad">
+                <label for="imedia">Média</label>
+                <input type="number" name="media" id="imedia" required min="0" max="10" placeholder="0 a 10" step="0.1">
+            </p>
+            <p class="cad">
+                <label for="imes">Periodo Letivo</label>
+                <input type="month" name="mes" id="imes" value="2020-08">
+            </p>
+            <p class="cad">
+                <label for="idia">Dia da prova</label>
+                <input type="date" name="dia" id="idia">
+            </p>
+            <p class="cad">
+                <label for="ihora">Hora da prova</label>
+                <input type="time" name="hora" id="ihora">
+            </p>
+            <p>
+                <input type="submit" value="Enviar" class="sub">
+                <input type="reset" value="Limpar" class="lim">
+            </p>
+        </form>
+    </section>
 </body>
 </html>
