@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        body {
+            background-color: lightgray;
+            font-family: Arial, Helvetica, sans-serif
+        }
+
+        fieldset {
+            border: solid 2px rgb(255, 0, 0);
+            background-color: lightblue;
+            box-shadow: 2px 2px 5px rgb(0, 0, 0);
+            width: 200px;
+        }
+
+        input {
+            border: solid 2px black;
+            border-radius: 5px;
+        }
+
+        legend {
+            border: solid 2px black;
+            background-color: white;
+        }
+
+        .en-li input:hover {
+            background-color: rgb(69, 65, 65);
+            color: white;
+            transform: translate(-1px,-1px);
+        }
+
+        .limpar {
+            position: relative;
+            left: 45%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de Formulario</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <p>
+                <label for="iname">Nome</label>
+                <input type="text" name="nome" id="iname" minlength="5" maxlength="20" size="25">
+            </p>
+            <p>
+                <label for="iemail">E-mail</label>
+                <input type="email" name="email" id="iemail" autocomplete="email" required placeholder="exemplo@gmail.com" size="25">
+            </p>
+            <p>
+                <label for="itel">Telefone</label>
+                <input type="tel" name="tel" id="itel" autocomplete="tel" required pattern="^(/d{2}/)/d{5,4}-/d{4}$" placeholder="(xx)xxxxx-xxxx" size="25">
+                <!-- Estudar mais sobre Regex -->
+            </p>
+            <p class="en-li">
+                <input type="submit" value="Enviar">
+                <input class="limpar" type="reset" value="Limpar">
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
